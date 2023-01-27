@@ -1,1 +1,1 @@
-# Reference-Guided-Image-Inpainting-using-Facial-Attributes
+# RGINP: Reference-Guided-Image-Inpainting-using-Facial-Attributes
