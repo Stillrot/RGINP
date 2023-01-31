@@ -14,7 +14,7 @@ This repository is a official Pytorch implementation of RGINP.
 ## Architecture
 ![Architecture](imgs/architecture.jpg)
 
-$I_{masked}$ and $M$ are the input of $Enc$, we omit $M$ in this figure to express clearly our framework. For the test stage (red line), the user extract desired attributes using our attributes extractor to a reference image.
+$I_{masked}$ and $M$ are the input of Enc, we omit $M$ in this figure to express clearly our framework. For the test stage (red line), the user extract desired attributes using our attributes extractor to a reference image.
 
 ## Dependencies
 - pytorch
@@ -24,6 +24,7 @@ $I_{masked}$ and $M$ are the input of $Enc$, we omit $M$ in this figure to expre
 - Pillow
 
 ## **Preparing datasets**
+We utilize all the experiments in this paper using [CelebA-HQ dataset](https://github.com/tkarras/progressive_growing_of_gans/tree/original-theano-version).
 
 
 
