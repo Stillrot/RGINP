@@ -1,4 +1,4 @@
-# RGINP: Reference-Guided-Image-Inpainting-using-Facial-Attributes
+# RGINP: Reference Guided Image Inpainting <br> using Facial Attributes
 
 This repository is a official Pytorch implementation of RGINP.
 
@@ -27,25 +27,27 @@ $I_{masked}$ and $M$ are the input of Enc, we omit $M$ in this figure to express
 We utilize all the experiments in this paper using [CelebA-HQ dataset](https://github.com/tkarras/progressive_growing_of_gans/tree/original-theano-version).
 Please download the datasets and then construct them as shown below.
 
-```bash
-    ./data
-      ./train
-        ./CelebA_HQ
-          ./0.jpg
-            .
-            .
-            .
-          ./27999.jpg
-      ./test
-        ./CelebA_HQ
-          ./28000.jpg
-            .
-            .
-            .
-          ./29999.jpg
-      ./masks
-        ./traian
-        ./test
-    ./RGINP/...
+```
+    --data
+      --train
+        --CelebA_HQ
+          --0.jpg
+            ⋮
+          --27999.jpg
+      --test
+        --CelebA_HQ
+          --28000.jpg
+            ⋮
+          --29999.jpg
+      --masks
+        --traian
+            --00000_train.png
+              ⋮
+        --test
+            --00000_test.png
+              ⋮
+        
+    --RGINP
+        ⋮
 ```
 
