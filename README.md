@@ -24,8 +24,10 @@ $I_{masked}$ and $M$ are the input of Enc, we omit $M$ in this figure to express
 - Pillow
 
 ## **Preparing datasets**
-We utilize all the experiments in this paper using [CelebA-HQ dataset](https://github.com/tkarras/progressive_growing_of_gans/tree/original-theano-version).
+We utilize all the experiments in this paper using [CelebA-HQ dataset](https://github.com/tkarras/progressive_growing_of_gans/tree/original-theano-version) and [Quick Draw Irregular Mask dataset](https://github.com/karfly/qd-imd).
 Please download the datasets and then construct them as shown below.
+If you want to train or evaluate different images you have yo change 
+If you want to learn and evaluate different images you have to change `dataloader.py`.
 
 ```
     --data
