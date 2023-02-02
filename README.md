@@ -25,8 +25,7 @@ $I_{masked}$ and $M$ are the input of Enc, we omit $M$ in this figure to express
 
 ## **Preparing datasets**
 We utilize all the experiments in this paper using [CelebA-HQ dataset](https://github.com/tkarras/progressive_growing_of_gans/tree/original-theano-version) and [Quick Draw Irregular Mask dataset](https://github.com/karfly/qd-imd).
-Please download the datasets and then construct them as shown below.
-If you want to train or evaluate different images you have yo change 
+Please download the datasets and then construct them as shown below.<br>
 If you want to learn and evaluate different images you have to change `dataloader.py`.
 
 ```
@@ -53,3 +52,57 @@ If you want to learn and evaluate different images you have to change `dataloade
         ⋮
 ```
 
+## Training
+Please select the desired attributes from the CelebA-HQ annotation. <br>
+The default attributes of this experiment are as follows.
+```bash
+attrs_default = ['Bushy_Eyebrows', 
+                'Mouth_Slightly_Open', 
+                'Big_Lips', 
+                'Male', 
+                'Mustache', 
+                'Young', 
+                'Smiling', 
+                'Wearing_Lipstick',
+                'No_Beard']
+```
+
+To train the model:
+```bash
+python main.py --mode train
+```
+
+To resume the model:
+```bash
+python main.py --mode train --resume_iter 52500
+```
+
+## Validation
+```bash
+python main.py --mode val --resume_iter 200000
+```
+
+## Test
+To test the model, you need to provide an input image, a reference image, and a mask file. <br>
+Please make sure that the mask file covers the entire mask region in the input image. <br>
+All file names must be the same and constructed as shown below.
+
+```
+    --RGINP
+        ⋮
+        --user_test
+            --test_result
+            --user_input
+                --image
+                    --ref
+                        --sample.jpg   # reference image
+                    --src
+                        --sample.jpg   # input image
+                --mask
+                    --sample.jpg       # mask image
+```
+
+To test the model:
+```bash
+python main.py --mode test --resume_iter 200000
+```
