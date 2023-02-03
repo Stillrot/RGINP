@@ -29,6 +29,7 @@ If you want to learn and evaluate different images you have to change `dataloade
 ```
     --data
       --train
+        --CelebAMask-HQ-attribute-anno.txt
         --CelebA_HQ
           --0.jpg
             ⋮
@@ -51,7 +52,7 @@ If you want to learn and evaluate different images you have to change `dataloade
 ```
 
 ## Training
-Please select the desired attributes from the CelebA-HQ annotation. <br>
+Please select the desired attributes from the `CelebAMask-HQ-attribute-anno.txt`. <br>
 The default attributes of this experiment are as follows.
 ```bash
 attrs_default = ['Bushy_Eyebrows', 
