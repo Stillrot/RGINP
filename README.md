@@ -2,8 +2,6 @@
 
 This repository is a official Pytorch implementation of RGINP.
 
-<br>
-
 ![Teaser Image](imgs/main_img.jpg)
 
 ## [Paper](https://arxiv.org/abs/2301.08044)
@@ -106,3 +104,16 @@ To test the model:
 ```bash
 python main.py --mode test --resume_iter 200000
 ```
+
+## Citation
+```
+@article{bmvc2021_RGINP,
+  title={Reference Guided Image Inpainting using Facial Attributes},
+  author={Yoon, Dongsik and Kwak, Jeonggi and Li, Yuanming and Han, David and Jin, Youngsaeng and Ko, Hanseok},
+  journal={arXiv preprint arXiv:2301.08044},
+  year={2023}
+}
+```
+
+## Acknowledgments
+RGINP is bulided upon the [LBAM](https://github.com/Vious/LBAM_Pytorch) implementation and inspired by [MLGN](https://github.com/JieLiu95/MLGN). <br> We appreciate the authors' excellent work!
