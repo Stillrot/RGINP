@@ -40,7 +40,7 @@ If you want to learn and evaluate different images you have to change `dataloade
             ⋮
           --29999.jpg
       --masks
-        --traian
+        --train
             --00000_train.png
               ⋮
         --test
